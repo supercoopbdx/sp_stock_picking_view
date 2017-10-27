@@ -21,4 +21,4 @@ class StockPackOperation(models.Model):
 
     # sp_price = fields.Float(string="Product Base Price", store=False, readonly=False, related="product_id.seller_ids.ids[0].price")
     # sp_price = fields.Float(compute='_get_product_supplierinfo_base_price', string='Product Base Price', store=False, readonly=True)
-    sp_price = fields.Float(compute='_get_product_supplierinfo_base_price', string='Product Seller', store=False, copy=False)
+    sp_price = fields.Float(compute='_get_product_supplierinfo_base_price', string='Product Seller Price', store=False, copy=False)
